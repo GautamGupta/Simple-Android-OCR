@@ -195,10 +195,10 @@ public class SimpleAndroidOCRActivity extends Activity {
 
 				// Rotating Bitmap
 				bitmap = Bitmap.createBitmap(bitmap, 0, 0, w, h, mtx, false);
-
-				// Convert to ARGB_8888, required by tess
-				bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true);
 			}
+
+			// Convert to ARGB_8888, required by tess
+			bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true);
 
 		} catch (IOException e) {
 			Log.e(TAG, "Couldn't correct orientation: " + e.toString());
