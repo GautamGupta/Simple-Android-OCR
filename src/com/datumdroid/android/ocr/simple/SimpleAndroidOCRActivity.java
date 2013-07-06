@@ -72,10 +72,10 @@ public class SimpleAndroidOCRActivity extends Activity {
 			try {
 
 				AssetManager assetManager = getAssets();
-				InputStream in = assetManager.open("tessdata/eng.traineddata");
+				InputStream in = assetManager.open("tessdata/" + lang + ".traineddata");
 				//GZIPInputStream gin = new GZIPInputStream(in);
 				OutputStream out = new FileOutputStream(DATA_PATH
-						+ "tessdata/eng.traineddata");
+						+ "tessdata/" + lang + ".traineddata");
 
 				// Transfer bytes from in to out
 				byte[] buf = new byte[1024];
