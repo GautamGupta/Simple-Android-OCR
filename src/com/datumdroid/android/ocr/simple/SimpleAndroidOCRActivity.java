@@ -48,6 +48,8 @@ public class SimpleAndroidOCRActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
 
 		String[] paths = new String[] { DATA_PATH, DATA_PATH + "tessdata/" };
 
@@ -94,9 +96,7 @@ public class SimpleAndroidOCRActivity extends Activity {
 			}
 		}
 
-		super.onCreate(savedInstanceState);
-
-		setContentView(R.layout.main);
+		
 
 		// _image = (ImageView) findViewById(R.id.image);
 		_field = (EditText) findViewById(R.id.field);
