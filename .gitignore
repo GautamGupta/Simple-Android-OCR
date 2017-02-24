@@ -38,3 +38,7 @@ Thumbs.db
 bin/
 gen/
 .settings/
+
+# Gradle generated files #
+.gradle
+build
